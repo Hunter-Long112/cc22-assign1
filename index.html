@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <title>The Cookbook</title>
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+        }
+ 
+        .background {
+            background: black;
+            background-blend-mode: darken;
+            background-size: cover;
+        }
+ 
+        .nav-list {
+            width: 70%;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+        .logo img {
+            width: 180px;
+            border-radius: 50px;
+        }
+ 
+        .nav-list li {
+            list-style: none;
+            padding: 26px 30px;
+        }
+ 
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+ 
+        .nav-list li a:hover {
+            color: grey;
+        }
+ 
+        .rightnav {
+            width: 30%;
+            text-align: right;
+        }
+ 
+        .firstsection {
+            background-color: green;
+            height: 400px;
+        }
+ 
+        .secondsection {
+            background-color: blue;
+            height: 400px;
+        }
+ 
+        .box-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            max-width: 80%;
+            margin: auto;
+            height: 80%;
+        }
+ 
+        .firsthalf {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+ 
+        .secondhalf {
+            width: 30%;
+        }
+ 
+        .secondhalf img {
+            width: 70%;
+            border: 4px solid white;
+            border-radius: 150px;
+            display: block;
+            margin: auto;
+        }
+ 
+        .text-big {
+            font-family: 'Piazzolla', serif;
+            font-weight: bold;
+            font-size: 35px;
+        }
+ 
+        .text-small {
+            font-size: 18px;
+        }
+ 
+        .btn {
+            padding: 8px 20px;
+            margin: 7px 0;
+            border: 2px solid white;
+            border-radius: 8px;
+            background: none;
+            color: white;
+            cursor: pointer;
+        }
+ 
+        .btn-sm {
+            padding: 6px 10px;
+            vertical-align: middle;
+        }
+ 
+        .section {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 90%;
+            margin: auto;
+        }
+ 
+        .section-Left {
+            flex-direction: row-reverse;
+        }
+ 
+        .paras {
+            padding: 0px 65px;
+        }
+ 
+        .thumbnail img {
+            width: 250px;
+            border: 2px solid black;
+            border-radius: 26px;
+            margin-top: 19px;
+        }
+ 
+        .center {
+            text-align: center;
+        }
+				.center_pic{
+						display: block;
+						margin-left: auto;
+  					margin-right: auto;
+				}
+ 
+        .text-footer {
+            text-align: center;
+            padding: 30px 0;
+            font-family: 'Ubuntu', sans-serif;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+				/* Three image containers (use 25% for four, and 50% for two, etc) */
+				.column {
+  					float: left;
+  					width: 33.33%;
+  					padding: 5px;
+				}
+
+				/* Clear floats after image containers */
+				.row::after {
+  					content: "";
+  					clear: both;
+  					display: table;
+				}
+    </style>
+</head>
+ 
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src= "https://cc22-assign1.s3.amazonaws.com/cooking_logo.png">
+            </div>
+						<li><a href="https://cc22-assign1.s3.amazonaws.com/sides.html">Sides</a></li>
+						<li><a href="https://cc22-assign1.s3.amazonaws.com/Baking.html">Baking</a></li>
+						<li><a href="https://cc22-assign1.s3.amazonaws.com/Dessert.html">Dessert</a></li>
+						<li><a href="https://cc22-assign1.s3.amazonaws.com/grilling.html">Grilling</a></li>
+						<li><a href="https://cc22-assign1.s3.amazonaws.com/HowTos.html">How Tos</a></li>
+        </ul>
+ 
+    </nav>
+	<center>
+		<div class="row">
+    	<img src="/cooking.jpg" alt="first_picture" style="width:60%">
+    	<img src="/cooking2.jpg" alt="second_picture" style="width:60%">
+  	</div>
+	</center>
+
+	<center>
+		<video width="640" height="680" controls>
+  		<source src="Steak - 16406.mp4" type="video/mp4">
+			Your browser does not support this video type.
+		</video>
+	</center>
+
+    <section class="secondsection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <h1 class="text-big" id="program">This is going to be my website.
+                </h1>
+                <p class="text-small">
+								For a long while now I've wanted to start a cookbook,
+								and this website seems like a great place to start. For
+								now it is bare bones, just what the assignment required.
+								I think that in the future I will flesh it out more and
+								and start to use it. Possibly even spin up an ec2 instance
+								so I can use an actual database and web server. 
+                </p>
+ 
+ 
+            </div>
+        </div>
+    </section>
+ 
+ 
+    </footer>
+</body>
+ 
+</html>
