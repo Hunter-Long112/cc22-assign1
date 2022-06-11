@@ -12,4 +12,5 @@ This was a fun assignment; I'm glad that the assignments in this class are based
 
 4. The last step was to setup CloudFront for the website, which is argueably the easiest part of this assignment. All I had to do was go to services > CloudFront, create a new distribution, and enter the origin domain (for which I put the link to the bucket endpoint, the link to the website.) 
 
+## Has Been Taken Down ##
 Link to Website: http://cc22-assign1.s3-website-us-east-1.amazonaws.com
